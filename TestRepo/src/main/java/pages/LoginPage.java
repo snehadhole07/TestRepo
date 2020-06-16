@@ -14,14 +14,14 @@ public class LoginPage {
 	private By loginButton=By.cssSelector("#login button");
 	
 	public void setUsername(String username) {
-		driver.findElement(usernameField).sendKeys("tomsmith");
+		driver.findElement(usernameField).sendKeys(username);
 	}
 	public void setPassword(String password)
 	{
-		driver.findElement(passwordField).sendKeys("SuperSecretPassword!");
+		driver.findElement(passwordField).sendKeys(password);
 	}
 	public SecureAreaPage ClickLoginButton() {
 		driver.findElement(loginButton).click();
-		return new SecureAreaPage();
+		return new SecureAreaPage(driver);
 	}
 }

@@ -1,22 +1,27 @@
 package base;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import pages.Homepage;
 
 public class baseTests {
 	private WebDriver driver;
-
+	protected Homepage homepage;
+@BeforeClass
 	public void setUp() {
 		// Set the chromedriver
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		// launch the application in browser
 		driver.get("https://the-internet.herokuapp.com/");
+		  homepage = new Homepage(driver);
+}
 		// print the title of the application
 		/*
 		 * System.out.println(driver.getTitle()); // maximize the browser
@@ -26,8 +31,15 @@ public class baseTests {
 		 * dimension or size to the browser Dimension d = new Dimension(516, 600);
 		 * driver.manage().window().setSize(d); // print the size and verify the size
 		 * System.out.println(driver.manage().window().getSize()); // close the
-		 * Webdriver instance driver.quit();
-		 */
+		 * Webdriver instance */
+
+
+		//@AfterClass
+		//public void teartown() {
+		
+		 //driver.quit();
+		
+		//}
 
 		/*
 		 * List<WebElement> allElements = driver.findElements(By.xpath("//*")); //
@@ -86,12 +98,14 @@ public class baseTests {
 		System.out.println("total dropdown lists "+dropdown.size());*/
 		
 				
-}
+
+
 
 	public static void main(String args[]) {
 		baseTests test = new baseTests();
 		test.setUp();
+	
 		
-
+	
 	}
 }

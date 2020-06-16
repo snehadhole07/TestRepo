@@ -9,7 +9,7 @@ public class Homepage {
 	public Homepage(WebDriver driver) {
 		this.driver=driver;
 	}
-	public LoginPage ClickFormAuthentication() {
+	public  LoginPage ClickFormAuthentication() {
 		driver.findElement(FormAuthenticationLink).click();
 		return new LoginPage(driver);
 		
