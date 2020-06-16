@@ -91,6 +91,7 @@ public class baseTests {
 	public static void main(String args[]) {
 		baseTests test = new baseTests();
 		test.setUp();
+		
 
 	}
 }
