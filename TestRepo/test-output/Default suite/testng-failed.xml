@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="login.LoginTests">
+      <class name="dropdown.dropdownTests">
         <methods>
-          <include name="testSuccessfulLogin"/>
           <include name="setUp"/>
+          <include name="testSelectOption"/>
         </methods>
-      </class> <!-- login.LoginTests -->
+      </class> <!-- dropdown.dropdownTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

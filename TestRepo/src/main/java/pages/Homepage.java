@@ -4,15 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Homepage {
-	private By FormAuthenticationLink=By.linkText("Form Authentication");
+	//private By FormAuthenticationLink=By.linkText("Form Authentication"); //removed after implementing generic method linkText
 	private WebDriver driver;
 	public Homepage(WebDriver driver) {
 		this.driver=driver;
 	}
 	public  LoginPage ClickFormAuthentication() {
-		driver.findElement(FormAuthenticationLink).click();
+		//driver.findElement(FormAuthenticationLink).click();
+		clickLink("Form Authentication");
+		
 		return new LoginPage(driver);
 		
 	}
+	
+	private void clickLink(String linkText) {
+		driver.findElement(By.linkText(linkText)).click();
+	}
+	
+	public  DropdownPage ClickDropdown() {
+		clickLink("Dropdown");
+	return new DropdownPage(driver);
 
+}
 }
