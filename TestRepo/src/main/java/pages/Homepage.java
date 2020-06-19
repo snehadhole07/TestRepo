@@ -29,9 +29,13 @@ public class Homepage {
 		return new DropdownPage(driver);
 	}
 
-	public HoverPage ClickHovers() 
-{
-	clickLink("Hovers");
-	return new HoverPage(driver);
+	public HoverPage ClickHovers() {
+		clickLink("Hovers");
+		return new HoverPage(driver);
+	}
+
+	public KeyPressesPage ClickKeyPresses() {
+		clickLink("Key Presses");
+		return new KeyPressesPage(driver);
 	}
 }
