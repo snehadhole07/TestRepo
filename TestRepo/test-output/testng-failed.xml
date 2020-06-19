@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dropdown.dropdownTests">
+      <class name="hover.hoverTests">
         <methods>
+          <include name="testHoveruser1"/>
           <include name="setUp"/>
-          <include name="testSelectOption"/>
         </methods>
-      </class> <!-- dropdown.dropdownTests -->
+      </class> <!-- hover.hoverTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
