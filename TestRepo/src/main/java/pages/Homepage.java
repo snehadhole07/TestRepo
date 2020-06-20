@@ -38,4 +38,8 @@ public class Homepage {
 		clickLink("Key Presses");
 		return new KeyPressesPage(driver);
 	}
+	public AlertPage ClickJavascriptAlerts() {
+		clickLink("JavaScript Alerts");
+		return new AlertPage(driver);
+	}
 }
