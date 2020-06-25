@@ -38,8 +38,19 @@ public class Homepage {
 		clickLink("Key Presses");
 		return new KeyPressesPage(driver);
 	}
+
 	public AlertPage ClickJavascriptAlerts() {
 		clickLink("JavaScript Alerts");
 		return new AlertPage(driver);
+	}
+
+	public FileUploadPage ClickFileupload() {
+		clickLink("File Upload");
+		return new FileUploadPage(driver);
+	}
+
+	public WysiwygEditorPage ClickWysiwygEditor() {
+		clickLink("WYSIWYG Editor");
+		return new WysiwygEditorPage(driver);
 	}
 }
