@@ -33,6 +33,7 @@ public class WysiwygEditorPage {
 		driver.switchTo().parentFrame();
 	}
 
+	@SuppressWarnings("unused")
 	private void decreaseIntentaion() {
 		driver.findElement(decreaseIntentButton).click();
 	}

@@ -1,5 +1,7 @@
 package base;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,7 @@ public class baseTests {
 		// Set the chromedriver
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		driver = new ChromeDriver();
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// launch the application in browser
 		driver.get("https://the-internet.herokuapp.com/");
 		  homepage = new Homepage(driver);

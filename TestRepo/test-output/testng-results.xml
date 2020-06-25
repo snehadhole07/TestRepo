@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-25T14:58:14 IST" name="Default suite" finished-at="2020-06-25T14:58:40 IST" duration-ms="26233">
+  <suite started-at="2020-06-25T18:41:43 IST" name="Default suite" finished-at="2020-06-25T18:42:16 IST" duration-ms="33267">
     <groups>
     </groups>
-    <test started-at="2020-06-25T14:58:14 IST" name="Default test" finished-at="2020-06-25T14:58:40 IST" duration-ms="26233">
-      <class name="frames.framesTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:frames.framesTests@7f1302d6]" started-at="2020-06-25T14:58:14 IST" name="setUp" finished-at="2020-06-25T14:58:33 IST" duration-ms="19494" status="PASS">
+    <test started-at="2020-06-25T18:41:43 IST" name="Default test" finished-at="2020-06-25T18:42:16 IST" duration-ms="33267">
+      <class name="wait.waitTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:wait.waitTests@2805c96b]" started-at="2020-06-25T18:41:43 IST" name="setUp" finished-at="2020-06-25T18:42:07 IST" duration-ms="24153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testWysiwyg()[pri:0, instance:frames.framesTests@7f1302d6]" started-at="2020-06-25T14:58:33 IST" name="testWysiwyg" finished-at="2020-06-25T14:58:40 IST" duration-ms="6652" status="PASS">
+        <test-method signature="testWaitUntilHidden()[pri:0, instance:wait.waitTests@2805c96b]" started-at="2020-06-25T18:42:07 IST" name="testWaitUntilHidden" finished-at="2020-06-25T18:42:16 IST" duration-ms="8975" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWysiwyg -->
-      </class> <!-- frames.framesTests -->
+        </test-method> <!-- testWaitUntilHidden -->
+      </class> <!-- wait.waitTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

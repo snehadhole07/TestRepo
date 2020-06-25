@@ -1,7 +1,5 @@
 package pages;
 
-import java.io.File;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

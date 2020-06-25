@@ -53,4 +53,8 @@ public class Homepage {
 		clickLink("WYSIWYG Editor");
 		return new WysiwygEditorPage(driver);
 	}
+	public DynamicLoadingPage ClickDynamicLoading() {
+		clickLink("Dynamic Loading");
+		return new DynamicLoadingPage(driver);
+	}
 }
