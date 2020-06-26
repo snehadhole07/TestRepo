@@ -5,12 +5,14 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -25,7 +27,7 @@ import utils.EventReporter;
 import utils.WindowManager;
 
 public class baseTests {
-	//private WebDriver driver;
+	// private WebDriver driver;
 	private EventFiringWebDriver driver;
 	protected Homepage homepage;
 
@@ -33,9 +35,10 @@ public class baseTests {
 	public void setUp() {
 		// Set the chromedriver
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-		driver = new EventFiringWebDriver(new ChromeDriver());
+		driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
 		driver.register(new EventReporter());
 		goHome();
+		setCookies();
 	}
 
 	// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -84,10 +87,10 @@ public class baseTests {
 
 	}
 
-	@AfterClass
+	/*@AfterClass
 	public void teartown() {
 		driver.quit();
-	}
+	}*/
 
 	/*
 	 * List<WebElement> allElements = driver.findElements(By.xpath("//*")); //
@@ -153,7 +156,18 @@ public class baseTests {
 
 	public WindowManager getWindowManager() {
 		return new WindowManager(driver);
-
 	}
 
+	private ChromeOptions getChromeOptions() {
+		ChromeOptions options = new ChromeOptions();
+		//options.setHeadless(true);
+		
+		options.addArguments("disable-infobars");
+		return options;
+		}
+	private void setCookies() {
+		Cookie cookie=new Cookie.Builder("sneha", "sneha123").domain("the-internet.herokuapp.com").build();
+		driver.manage().addCookie(cookie);
+		
+	}
 }

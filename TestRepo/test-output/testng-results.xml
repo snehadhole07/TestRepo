@@ -2,38 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-26T19:55:03 IST" name="Default suite" finished-at="2020-06-26T19:55:21 IST" duration-ms="18053">
+  <suite started-at="2020-06-26T20:36:40 IST" name="Default suite" finished-at="2020-06-26T20:36:57 IST" duration-ms="16956">
     <groups>
     </groups>
-    <test started-at="2020-06-26T19:55:03 IST" name="Default test" finished-at="2020-06-26T19:55:21 IST" duration-ms="18053">
+    <test started-at="2020-06-26T20:36:40 IST" name="Default test" finished-at="2020-06-26T20:36:57 IST" duration-ms="16956">
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:03 IST" name="setUp" finished-at="2020-06-26T19:55:15 IST" duration-ms="12095" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@7219ec67]" started-at="2020-06-26T20:36:40 IST" name="setUp" finished-at="2020-06-26T20:36:52 IST" duration-ms="11876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:15 IST" name="goHome" finished-at="2020-06-26T19:55:16 IST" duration-ms="815" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@7219ec67]" started-at="2020-06-26T20:36:52 IST" name="goHome" finished-at="2020-06-26T20:36:52 IST" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:16 IST" name="testSuccessfulLogin" finished-at="2020-06-26T19:55:20 IST" duration-ms="4130" status="PASS">
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@7219ec67]" started-at="2020-06-26T20:36:52 IST" name="testSuccessfulLogin" finished-at="2020-06-26T20:36:57 IST" duration-ms="4148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:20 IST" name="recordFailure" finished-at="2020-06-26T19:55:20 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:login.LoginTests@7219ec67]" started-at="2020-06-26T20:36:57 IST" name="recordFailure" finished-at="2020-06-26T20:36:57 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@16e7dcfd] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@7219ec67] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="teartown()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:20 IST" name="teartown" finished-at="2020-06-26T19:55:21 IST" duration-ms="903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teartown -->
       </class> <!-- login.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
