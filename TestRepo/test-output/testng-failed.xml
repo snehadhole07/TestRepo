@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wait.waitTests">
+      <class name="javascript.javascriptTests">
         <methods>
+          <include name="testScrollToFifthParagraph"/>
           <include name="setUp"/>
-          <include name="testWaitUntilHidden"/>
+          <include name="testScrollToTable"/>
         </methods>
-      </class> <!-- wait.waitTests -->
+      </class> <!-- javascript.javascriptTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

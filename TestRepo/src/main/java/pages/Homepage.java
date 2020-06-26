@@ -17,8 +17,7 @@ public class Homepage {
 		clickLink("Form Authentication");
 
 		return new LoginPage(driver);
-
-	}
+		}
 
 	private void clickLink(String linkText) {
 		driver.findElement(By.linkText(linkText)).click();
@@ -57,4 +56,13 @@ public class Homepage {
 		clickLink("Dynamic Loading");
 		return new DynamicLoadingPage(driver);
 	}
+	public LoadAndDeepDOMPage ClickLoadAndDeepDOM() {
+		clickLink("Large & Deep DOM");
+		return new LoadAndDeepDOMPage(driver);
+	}
+	public InfinteScrollPage ClickInfinteScroll() {
+		clickLink("Infinite Scroll");
+		return new InfinteScrollPage(driver);
+	}
+	
 }
