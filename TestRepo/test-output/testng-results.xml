@@ -1,83 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-26T19:21:31 IST" name="Default suite" finished-at="2020-06-26T19:21:53 IST" duration-ms="22354">
+  <suite started-at="2020-06-26T19:55:03 IST" name="Default suite" finished-at="2020-06-26T19:55:21 IST" duration-ms="18053">
     <groups>
     </groups>
-    <test started-at="2020-06-26T19:21:31 IST" name="Default test" finished-at="2020-06-26T19:21:53 IST" duration-ms="22354">
-      <class name="keys.keysTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:keys.keysTests@78e94dcf]" started-at="2020-06-26T19:21:31 IST" name="setUp" finished-at="2020-06-26T19:21:49 IST" duration-ms="18437" status="PASS">
+    <test started-at="2020-06-26T19:55:03 IST" name="Default test" finished-at="2020-06-26T19:55:21 IST" duration-ms="18053">
+      <class name="login.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:03 IST" name="setUp" finished-at="2020-06-26T19:55:15 IST" duration-ms="12095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:keys.keysTests@78e94dcf]" started-at="2020-06-26T19:21:49 IST" name="goHome" finished-at="2020-06-26T19:21:50 IST" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:15 IST" name="goHome" finished-at="2020-06-26T19:55:16 IST" duration-ms="815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testBackSpace()[pri:0, instance:keys.keysTests@78e94dcf]" started-at="2020-06-26T19:21:50 IST" name="testBackSpace" finished-at="2020-06-26T19:21:51 IST" duration-ms="1357" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [You entered: BACK_SPACE!] but found [You entered: BACK_SPACE]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [You entered: BACK_SPACE!] but found [You entered: BACK_SPACE]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at keys.keysTests.testBackSpace(keysTests.java:15)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:16 IST" name="testSuccessfulLogin" finished-at="2020-06-26T19:55:20 IST" duration-ms="4130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBackSpace -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:keys.keysTests@78e94dcf]" started-at="2020-06-26T19:21:51 IST" name="recordFailure" finished-at="2020-06-26T19:21:52 IST" duration-ms="876" status="PASS">
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:20 IST" name="recordFailure" finished-at="2020-06-26T19:55:20 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testBackSpace status=FAILURE method=keysTests.testBackSpace()[pri:0, instance:keys.keysTests@78e94dcf] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@16e7dcfd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="teartown()[pri:0, instance:keys.keysTests@78e94dcf]" started-at="2020-06-26T19:21:52 IST" name="teartown" finished-at="2020-06-26T19:21:53 IST" duration-ms="884" status="PASS">
+        <test-method is-config="true" signature="teartown()[pri:0, instance:login.LoginTests@16e7dcfd]" started-at="2020-06-26T19:55:20 IST" name="teartown" finished-at="2020-06-26T19:55:21 IST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teartown -->
-      </class> <!-- keys.keysTests -->
+      </class> <!-- login.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
