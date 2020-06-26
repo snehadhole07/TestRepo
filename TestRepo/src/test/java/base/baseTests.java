@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import pages.Homepage;
+import utils.WindowManager;
 
 public class baseTests {
 	private WebDriver driver;
@@ -107,8 +108,13 @@ public class baseTests {
 	public static void main(String args[]) {
 		baseTests test = new baseTests();
 		test.setUp();
-	
-		
-	
 	}
+	public WindowManager getWindowManager() {
+		return new WindowManager(driver);
+		
+	}
+	
 }
+	
+	
+

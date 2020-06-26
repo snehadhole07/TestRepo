@@ -64,5 +64,9 @@ public class Homepage {
 		clickLink("Infinite Scroll");
 		return new InfinteScrollPage(driver);
 	}
+	public MultipleWindowsPage ClickMultipleWindows() {
+		clickLink("Multiple Windows");
+		return new MultipleWindowsPage(driver);
+	}
 	
 }

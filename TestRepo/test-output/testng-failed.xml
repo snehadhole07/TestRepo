@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javascript.javascriptTests">
+      <class name="navigation.navigationTests">
         <methods>
-          <include name="testScrollToFifthParagraph"/>
+          <include name="testSwitchTab"/>
           <include name="setUp"/>
-          <include name="testScrollToTable"/>
         </methods>
-      </class> <!-- javascript.javascriptTests -->
+      </class> <!-- navigation.navigationTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
